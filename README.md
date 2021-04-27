@@ -9,16 +9,11 @@ to build the project in the terminal:
 
 to run the project from the terminal:
 
-> docker run -p 8501:8501 python-final
+> docker run -p 8501:8501 -v <absolute path>:/driver.py python-final
 
-if I Ctrl-C to end the run and then rerun it get a 'port is already allocated' error so I have to 'kill' it to get it to rerun.
+docker run -p 8501:8501 -v 'C:\Users\Reed\Documents\6_DMACC\CIS_189_Final_Project\CIS_189_FinalProject\driver.py:/driver.py' python-final
 
-This is where the problem is, when I update my code, it does not show up on the local version I have to 'kill' the container and rebuild it by doing the following in the terminal:
-
+to kill a container
 > docker ps
 
 > docker kill <countainer-id>
-
-After that I have to run the docker build and docker run again to see changes.
-
-Is there a way to see live changes on my project, or even a command that will update the container so I can just do the run command again?
