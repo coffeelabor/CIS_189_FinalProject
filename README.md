@@ -9,9 +9,9 @@ to build the project in the terminal:
 
 to run the project from the terminal:
 
-> docker run -p 8501:8501 -v <absolute path>:/driver.py python-final
+> docker run -p 8501:8501 -v absolute path:/driver.py python-final
 
 to kill a container
 > docker ps
 
-> docker kill <countainer-id>
+> docker kill countainer-id
