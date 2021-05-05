@@ -5,7 +5,7 @@
 
 to build the project in the terminal:
 
-> docker build -t python-final
+> docker build -t python-final .
 
 to run the project from the terminal:
 
