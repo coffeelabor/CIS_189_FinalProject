@@ -1,12 +1,29 @@
-# import streamlit as st
-# import pandas
-# import requests
+'''
+/***************************************************************
+* Name: Final Project
+* Author: Reed James
+* Created: 4 May 2021
+* Course: CIS 189 - Python
+* Version: Python 3.7.5
+* OS: Windows 10
+* Copyright: This is my own original work based on
+*               specifications issued by our instructor
+* Description: Python program for picking stocks
+* Academic Honesty: I attest that this is my original work.
+* I have not used unauthorized source code, either modified or
+* unmodified. I have not given other fellow student(s) access to my program.
+***************************************************************/
+'''
 from package import *
+import tkinter
 
 
 if __name__ == "__main__":
-    # st.title("Stock Picker")
-    # st.sidebar.write("Enter a stock to get the price!")
+
+    main_window = tkinter.Tk()
+    main_window.geometry("500x500")
+
+    main_window.title("Stock Picker")
 
     person = Free_Account('1', 'John', 'Doe', '20000')
     stock_1 = Stock('TSLA', '670.60')
@@ -15,31 +32,6 @@ if __name__ == "__main__":
     person.add_stock(stock_2)
     print(person.display())
     print('Hello World')
-    # Setup Todo:
-    # # import plotly
-    # # figure out how to ADD ./ Folder
-    # # get api from tradier to work
-    # # set up basic ui for project: GET stock through search, add stock to watchlist, 
+    
 
-
-    # Dynamically name variables, append to array, have object names be account name concat stock name 
-    # # https://www.geeksforgeeks.org/python-program-to-create-dynamically-named-variables-from-user-input/
-
-    # Create parent free account and child paid account
-    # #atrribute: name, stock, account balance, date added, stock price repr, str, display 
-    # #
-    # # Maybe just have the regular account not display as much data and the primium displays data
-    # #
-    # #Create a user class to hold user data and a field for a list of stock objects
-
-    # Create subclass for regular account 
-    # Create subclass for premium account account 
-
-    '''
-    the user enters a first name, a last name, an account balance, and checks if they are signing up for a free or premium account
-
-    if they entered the information correct they click to open stock search. button checks if values present for above values
-
-
-
-    '''
+    main_window.mainloop()
