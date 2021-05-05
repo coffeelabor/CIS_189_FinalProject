@@ -8,8 +8,12 @@ if __name__ == "__main__":
     # st.title("Stock Picker")
     # st.sidebar.write("Enter a stock to get the price!")
 
-
-
+    person = Free_Account('1', 'John', 'Doe', '20000')
+    stock_1 = Stock('TSLA', '670.60')
+    stock_2 = Stock('AAPL', '125.43')
+    person.add_stock(stock_1)
+    person.add_stock(stock_2)
+    print(person.display())
     print('Hello World')
     # Setup Todo:
     # # import plotly
